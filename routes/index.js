@@ -6,8 +6,8 @@ router.get('/', function (req, res, next) {
   res.render('index', { title: 'ExpressFirasKebsiJS' });
 });
 
-router.post('/search', function (req, res) {
-  twitterSearch(req.body.search, function (data) {
+router.get('/search', function (req, res) {
+  twitterSearch("#Djilali", function (data) {
     res.json(data);
   });
 });
