@@ -3,8 +3,8 @@ var router = express.Router();
 var twitterSearch = require('../logic/twitterSearch');
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+router.get('/', function (req, res, next) {
+  res.render('index', { title: 'ExpressFirasKebsiJS' });
 });
 
 router.post('/search', function(req, res) {
